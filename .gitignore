@@ -1,0 +1,12 @@
+!.gitignore
+/WebLogSystem/bin
+/WebLogSystem/obj
+/WebLogSystem/python.pubxml
+/WebLogSystem/python.pubxml.user
+/WebLogSystem/weblog.log
+/WebLogSystem/WebLogSystem/__pycache__
+/WebLogSystem/WebLogSystem/apps/__pycache__
+/WebLogSystem/WebLogSystem/apps/api/migrations
+/WebLogSystem/WebLogSystem/apps/core/migrations
+/WebLogSystem/WebLogSystem/apps/core/__pycache__
+/WebLogSystem/WebLogSystem/apps/api/__pycache__

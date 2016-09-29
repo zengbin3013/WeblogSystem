@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>WebLogSystem</Name>
+    <RootNamespace>WebLogSystem</RootNamespace>
+    <NameOfLastUsedPublishProfile>python</NameOfLastUsedPublishProfile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>bd8af121-ff19-44cd-b05d-98158d35add5</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>test\test.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>WebLogSystem.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="django_wsgi.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="manage.py" />
+    <Compile Include="test\test.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebLogSystem\apps\api\models.py" />
+    <Compile Include="WebLogSystem\apps\api\tests.py" />
+    <Compile Include="WebLogSystem\apps\api\urls.py" />
+    <Compile Include="WebLogSystem\apps\api\views.py" />
+    <Compile Include="WebLogSystem\apps\api\__init__.py" />
+    <Compile Include="WebLogSystem\apps\core\models.py" />
+    <Compile Include="WebLogSystem\apps\core\tests.py" />
+    <Compile Include="WebLogSystem\apps\core\views.py" />
+    <Compile Include="WebLogSystem\apps\core\__init__.py" />
+    <Compile Include="WebLogSystem\apps\admin\models.py" />
+    <Compile Include="WebLogSystem\apps\admin\tests.py" />
+    <Compile Include="WebLogSystem\apps\admin\urls.py" />
+    <Compile Include="WebLogSystem\apps\admin\views.py" />
+    <Compile Include="WebLogSystem\apps\admin\__init__.py" />
+    <Compile Include="WebLogSystem\apps\__init__.py" />
+    <Compile Include="WebLogSystem\client\weblog_client.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebLogSystem\__init__.py" />
+    <Compile Include="WebLogSystem\settings.py" />
+    <Compile Include="WebLogSystem\urls.py" />
+    <Compile Include="WebLogSystem\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WebLogSystem\apps\admin\templates\admin\index.html" />
+    <Content Include="WebLogSystem\apps\admin\templates\admin\login.html" />
+    <Content Include="WebLogSystem\apps\admin\templates\admin\test.html" />
+    <Content Include="WebLogSystem\static\css\bootstrap.css" />
+    <Content Include="WebLogSystem\static\css\bootstrap.min.css" />
+    <Content Include="WebLogSystem\static\css\plugins\bootstrap-datetimepicker\bootstrap-datetimepicker.min.css" />
+    <Content Include="WebLogSystem\static\css\plugins\bootstrap-select\css\bootstrap-select.css" />
+    <Content Include="WebLogSystem\static\css\plugins\dataTables\dataTables.bootstrap.css" />
+    <Content Include="WebLogSystem\static\css\plugins\morris\morris-0.4.3.min.css" />
+    <Content Include="WebLogSystem\static\css\plugins\social-buttons\social-buttons.css" />
+    <Content Include="WebLogSystem\static\css\plugins\timeline\timeline.css" />
+    <Content Include="WebLogSystem\static\css\admin-index.css" />
+    <Content Include="WebLogSystem\static\css\sb-admin.css" />
+    <Content Include="WebLogSystem\static\font-awesome\css\font-awesome.css" />
+    <Content Include="WebLogSystem\static\font-awesome\css\font-awesome.min.css" />
+    <Content Include="WebLogSystem\static\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="WebLogSystem\static\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="WebLogSystem\static\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="WebLogSystem\static\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="WebLogSystem\static\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="WebLogSystem\static\font-awesome\less\bordered-pulled.less" />
+    <Content Include="WebLogSystem\static\font-awesome\less\core.less" />
+    <Content Include="WebLogSystem\static\font-awesome\less\fixed-width.less" />
+    <Content Include="WebLogSystem\static\font-awesome\less\font-awesome.less" />
+    <Content Include="WebLogSystem\static\font-awesome\less\icons.less" />
+    <Content Include="WebLogSystem\static\font-awesome\less\larger.less" />
+    <Content Include="WebLogSystem\static\font-awesome\less\list.less" />
+    <Content Include="WebLogSystem\static\font-awesome\less\mixins.less" />
+    <Content Include="WebLogSystem\static\font-awesome\less\path.less" />
+    <Content Include="WebLogSystem\static\font-awesome\less\rotated-flipped.less" />
+    <Content Include="WebLogSystem\static\font-awesome\less\spinning.less" />
+    <Content Include="WebLogSystem\static\font-awesome\less\stacked.less" />
+    <Content Include="WebLogSystem\static\font-awesome\less\variables.less" />
+    <Content Include="WebLogSystem\static\font-awesome\scss\font-awesome.scss" />
+    <Content Include="WebLogSystem\static\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="WebLogSystem\static\font-awesome\scss\_core.scss" />
+    <Content Include="WebLogSystem\static\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="WebLogSystem\static\font-awesome\scss\_icons.scss" />
+    <Content Include="WebLogSystem\static\font-awesome\scss\_larger.scss" />
+    <Content Include="WebLogSystem\static\font-awesome\scss\_list.scss" />
+    <Content Include="WebLogSystem\static\font-awesome\scss\_mixins.scss" />
+    <Content Include="WebLogSystem\static\font-awesome\scss\_path.scss" />
+    <Content Include="WebLogSystem\static\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="WebLogSystem\static\font-awesome\scss\_spinning.scss" />
+    <Content Include="WebLogSystem\static\font-awesome\scss\_stacked.scss" />
+    <Content Include="WebLogSystem\static\font-awesome\scss\_variables.scss" />
+    <Content Include="WebLogSystem\static\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="WebLogSystem\static\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="WebLogSystem\static\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="WebLogSystem\static\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="WebLogSystem\static\js\admin-index.js" />
+    <Content Include="WebLogSystem\static\js\bootstrap.js" />
+    <Content Include="WebLogSystem\static\js\bootstrap.min.js" />
+    <Content Include="WebLogSystem\static\js\demo\dashboard-demo.js" />
+    <Content Include="WebLogSystem\static\js\demo\flot-demo.js" />
+    <Content Include="WebLogSystem\static\js\demo\morris-demo.js" />
+    <Content Include="WebLogSystem\static\js\jquery-1.10.2.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-datetimepicker\bootstrap-datetimepicker.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-datetimepicker\bootstrap-datetimepicker.zh-CN.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\bootstrap-select.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-ar_AR.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-ar_AR.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-bg_BG.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-bg_BG.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-cro_CRO.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-cro_CRO.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-cs_CZ.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-cs_CZ.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-da_DK.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-da_DK.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-de_DE.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-de_DE.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-en_US.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-en_US.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-es_CL.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-es_CL.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-eu.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-eu.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-fa_IR.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-fa_IR.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-fi_FI.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-fi_FI.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-fr_FR.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-fr_FR.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-hu_HU.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-hu_HU.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-id_ID.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-id_ID.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-it_IT.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-it_IT.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-ko_KR.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-ko_KR.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-lt_LT.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-lt_LT.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-nb_NO.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-nb_NO.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-nl_NL.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-nl_NL.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-pl_PL.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-pl_PL.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-pt_BR.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-pt_BR.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-pt_PT.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-pt_PT.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-ro_RO.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-ro_RO.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-ru_RU.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-ru_RU.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-sk_SK.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-sk_SK.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-sl_SI.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-sl_SI.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-sv_SE.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-sv_SE.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-tr_TR.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-tr_TR.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-ua_UA.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-ua_UA.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-zh_CN.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-zh_CN.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-zh_TW.js" />
+    <Content Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\defaults-zh_TW.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\dataTables\dataTables.bootstrap.js" />
+    <Content Include="WebLogSystem\static\js\plugins\dataTables\jquery.dataTables.js" />
+    <Content Include="WebLogSystem\static\js\plugins\flot\jquery.flot.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\flot\jquery.flot.time.min.js" />
+    <Content Include="WebLogSystem\static\js\plugins\metisMenu\jquery.metisMenu.js" />
+    <Content Include="WebLogSystem\static\js\plugins\morris\morris.js" />
+    <Content Include="WebLogSystem\static\js\plugins\morris\raphael-2.1.0.min.js" />
+    <Content Include="WebLogSystem\static\js\admin-login.js" />
+    <Content Include="WebLogSystem\static\js\sb-admin.js" />
+    <None Include="python.pubxml" />
+    <Content Include="djangochina_socket.xml" />
+    <Content Include="requirements.txt" />
+    <Content Include="WebLogSystem\apps\api\sql\api.sql">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="WebLogSystem\apps\api\templates\index.html" />
+    <Content Include="WebLogSystem\apps\core\templates\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="test\" />
+    <Folder Include="WebLogSystem\" />
+    <Folder Include="WebLogSystem\apps\" />
+    <Folder Include="WebLogSystem\apps\admin\templates\admin\" />
+    <Folder Include="WebLogSystem\apps\api\" />
+    <Folder Include="WebLogSystem\apps\api\sql\" />
+    <Folder Include="WebLogSystem\apps\api\templates\" />
+    <Folder Include="WebLogSystem\apps\core\" />
+    <Folder Include="WebLogSystem\apps\core\templates\" />
+    <Folder Include="WebLogSystem\apps\admin\" />
+    <Folder Include="WebLogSystem\apps\admin\templates\" />
+    <Folder Include="WebLogSystem\client\" />
+    <Folder Include="WebLogSystem\static\" />
+    <Folder Include="WebLogSystem\static\css\" />
+    <Folder Include="WebLogSystem\static\css\plugins\" />
+    <Folder Include="WebLogSystem\static\css\plugins\bootstrap-select\" />
+    <Folder Include="WebLogSystem\static\css\plugins\bootstrap-select\css\" />
+    <Folder Include="WebLogSystem\static\css\plugins\dataTables\" />
+    <Folder Include="WebLogSystem\static\css\plugins\morris\" />
+    <Folder Include="WebLogSystem\static\css\plugins\bootstrap-datetimepicker\" />
+    <Folder Include="WebLogSystem\static\css\plugins\social-buttons\" />
+    <Folder Include="WebLogSystem\static\css\plugins\timeline\" />
+    <Folder Include="WebLogSystem\static\font-awesome\" />
+    <Folder Include="WebLogSystem\static\font-awesome\css\" />
+    <Folder Include="WebLogSystem\static\font-awesome\fonts\" />
+    <Folder Include="WebLogSystem\static\font-awesome\less\" />
+    <Folder Include="WebLogSystem\static\font-awesome\scss\" />
+    <Folder Include="WebLogSystem\static\fonts\" />
+    <Folder Include="WebLogSystem\static\js\" />
+    <Folder Include="WebLogSystem\static\js\demo\" />
+    <Folder Include="WebLogSystem\static\js\plugins\" />
+    <Folder Include="WebLogSystem\static\js\plugins\bootstrap-select\" />
+    <Folder Include="WebLogSystem\static\js\plugins\bootstrap-select\js\" />
+    <Folder Include="WebLogSystem\static\js\plugins\bootstrap-select\js\i18n\" />
+    <Folder Include="WebLogSystem\static\js\plugins\dataTables\" />
+    <Folder Include="WebLogSystem\static\js\plugins\flot\" />
+    <Folder Include="WebLogSystem\static\js\plugins\metisMenu\" />
+    <Folder Include="WebLogSystem\static\js\plugins\morris\" />
+    <Folder Include="WebLogSystem\static\js\plugins\bootstrap-datetimepicker\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

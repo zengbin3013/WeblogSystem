@@ -1,0 +1,14 @@
+<uwsgi>
+  <socket>:8863</socket>
+  <chdir>/LtblApplication/website/weblog.hoios.com/</chdir>
+  <module>django_wsgi</module>
+  <processes>4</processes>
+  <!-- 进程数 -->
+  <daemonize>uwsgi.log</daemonize>
+  <uid>www-data</uid>
+  <gid>www-data</gid>
+  <buffer-size>204857600</buffer-size>
+  <limit-post>204857600</limit-post>
+  <socket-timeout>3600</socket-timeout>
+  <http-timeout>3600</http-timeout>
+</uwsgi>
